@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <script src="auth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Formulaire de Connexion -->
+        <form id="loginForm">
+            <h2>Connexion</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+
+        <!-- Formulaire d'Inscription -->
+        <form id="signupForm" style="display: none;">
+            <h2>Inscription</h2>
+            <input type="text" id="signupUsername" placeholder="Nom d'utilisateur" required>
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Mot de passe" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+
+        <!-- Bouton pour basculer entre les formulaires -->
+        <button class="switch-button" onclick="toggleForms()">Passer à l'inscription</button>
+    </div>
+</body>
+</html>
